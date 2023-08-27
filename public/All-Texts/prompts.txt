@@ -1,3 +1,4 @@
 Prompt to generate developer image using midjourney:
 
 - A developer wearing glasses, digital art, profile picture, white background
+ - create a profile picture with blond woman developer wearing glasses, white background
