@@ -6,6 +6,7 @@ import Image from "next/image";
 import profile from "../../public/images/profile/1.png";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import { Skills } from "@/components/skills";
+import { Experience } from "@/components/experience";
 
 const AnimatedNumbers = ({value}) => {
   const ref = useRef(null);
@@ -14,18 +15,18 @@ const AnimatedNumbers = ({value}) => {
   const isInView = useInView(ref, {once: true});
 
   useEffect(() => {
-    if(isInView) {
-      motionValue.set(value)
+    if (isInView) {
+      motionValue.set(value);
     }
-    }, [isInView, motionValue, value])
+  }, [ isInView, motionValue, value ]);
 
   useEffect(() => {
     springValue.on("change", (latest) => {
-      if(ref.current && latest.toFixed(0) <= value) {
-        ref.current.textContent = latest.toFixed(0)
+      if (ref.current && latest.toFixed(0) <= value) {
+        ref.current.textContent = latest.toFixed(0);
       }
-    })
-  }, [springValue, value])
+    });
+  }, [ springValue, value ]);
 
   return <span ref={ref}></span>;
 };
@@ -51,7 +52,8 @@ const About = () => {
               </p>
 
               <p className="my-4 font-medium">
-                - I believe that design is about more than just making things look pretty – it&apos;s about solving problems
+                - I believe that design is about more than just making things look pretty – it&apos;s about solving
+                problems
                 and creating intuitive, enjoyable experiences for users.
 
               </p>
@@ -71,28 +73,29 @@ const About = () => {
             <div className="col-span-2 flex flex-col item-end justify-between">
               <div className="flex flex-col items-end justify-center">
                 <span className="inline-block text-7xl font-bold">
-                  <AnimatedNumbers value={5}/>+
+                  <AnimatedNumbers value={5} />+
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75">satisfied clients</h2>
               </div>
 
               <div className="flex flex-col items-end justify-center">
                 <span className="inline-block text-7xl font-bold">
-                  <AnimatedNumbers value={10}/>+
+                  <AnimatedNumbers value={10} />+
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75">projects completed</h2>
               </div>
 
               <div className="flex flex-col items-end justify-center">
                 <span className="inline-block text-7xl font-bold">
-                  <AnimatedNumbers value={1}/>+
+                  <AnimatedNumbers value={1} />+
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75">year of experience</h2>
               </div>
             </div>
 
           </div>
-          <Skills/>
+          <Skills />
+          <Experience />
         </Layout>
       </main>
 
