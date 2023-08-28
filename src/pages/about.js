@@ -36,10 +36,10 @@ const About = () => {
   return (
     <>
       <Head>
-        <title>CodeBucks | About Page</title>
+        <title>Portfolio | About Page</title>
         <meta name="description" content="any description" />
       </Head>
-      <main className="flex w-full flex-col items-center justify-center">
+      <main className="w-full flex flex-col items-center justify-center">
         <Layout className="pt-16">
           <AnimatedText text="Passion Fuels Purpose! " className="!text-6xl mb-16" />
           <div className="grid w-full grid-cols-8 gap-16">
