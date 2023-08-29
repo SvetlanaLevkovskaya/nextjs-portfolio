@@ -19,7 +19,12 @@ export default function Home() {
         <Layout className="pt-0">
           <div className="flex items-center justify-between w-full">
             <div className="w-1/3">
-              <Image src={profilePic} alt="image" className="w-full h-auto rounded-l-full" />
+              <Image src={profilePic} alt="image" className="w-full h-auto rounded-l-full"
+                     priority
+                     sizes="(max-width: 768px) 100vw,
+                     (max-width: 1200px) 50vw,
+                     50vw"
+              />
             </div>
             <div className="w-1/2 flex flex-col items-center self-center">
               <AnimatedText text="Transforming the Vision into Reality through Coding and Design."
@@ -46,7 +51,7 @@ export default function Home() {
         </Layout>
         <HireMe />
         <div className="absolute right-8 bottom-8 inline-block w-24">
-          <Image src={lightBulb} alt="Codebucks" className="w-full h-auto"/>
+          <Image src={lightBulb} alt="Codebucks" className="w-full h-auto" />
         </div>
       </main>
     </>
