@@ -9,6 +9,7 @@ import randomButton from "../../public/images/projects/random-button.png";
 import authPosts from "../../public/images/projects/auth-posts.png";
 import educationalApp from "../../public/images/projects/educational-app.png";
 import ecommerce from "../../public/images/projects/e-commerce.png";
+import lofthouse from "../../public/images/projects/lofthouse.png";
 
 import { motion } from "framer-motion";
 
@@ -159,10 +160,10 @@ const Projects = () => {
 
             <div className="col-span-6">
               <Project
-                title="Random Icon Button"
-                img={randomButton}
-                link="https://svetlanalevkovskaya.github.io/angular-docusketch/"
-                github="https://github.com/SvetlanaLevkovskaya/angular-docusketch"
+                title="Loft-House"
+                img={lofthouse}
+                link="https://svetlanalevkovskaya.github.io/loft-house/"
+                github="https://github.com/SvetlanaLevkovskaya/loft-house"
                 type="Featured Project"
               />
             </div>
