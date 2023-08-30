@@ -108,7 +108,7 @@ const Articles = () => {
       </Head>
       <main className="w-full flex flex-col items-center justify-center mb-16 overflow-hidden dark:text-light">
         <Layout className="pt-16">
-          <AnimatedText text="Words Can Change The World!" className="!text-6xl mb-16" />
+          <AnimatedText text="Words Can Change The World!" className="text-6xl mb-16" />
           <ul className="grid grid-cols-2 gap-16">
             <FeaturedArticle
               title="Build A Custom Pagination Component In Reactjs From Scratch"

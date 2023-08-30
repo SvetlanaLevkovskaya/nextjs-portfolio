@@ -39,9 +39,9 @@ const About = () => {
         <title>Portfolio | About Page</title>
         <meta name="description" content="any description" />
       </Head>
-      <main className="w-full flex flex-col items-center justify-center mb-16 overflow-hidden dark:text-light">
+      <main className="w-full flex flex-col items-center justify-center mb-16 overflow-hidden dark:text-light 2x1:">
         <Layout className="pt-16">
-          <AnimatedText text="Passion Fuels Purpose! " className="!text-8xl mb-16" />
+          <AnimatedText text="Passion Fuels Purpose! " className="mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl" />
           <div className="grid w-full grid-cols-8 gap-32">
             <div className="col-span-3 flex flex-col items-start justify-start">
               <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">Biography</h2>
