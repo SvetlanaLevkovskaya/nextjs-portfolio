@@ -12,6 +12,7 @@ import ecommerce from "../../public/images/projects/e-commerce.png";
 import lofthouse from "../../public/images/projects/lofthouse.png";
 
 import { motion } from "framer-motion";
+import { TransitionEffect } from "@/components/transition-effect";
 
 const FramerImage = motion(Image);
 
@@ -97,6 +98,7 @@ const Projects = () => {
         <title>Portfolio | Projects Page</title>
         <meta name="description" content="any description" />
       </Head>
+      <TransitionEffect />
       <main className="w-full flex flex-col items-center justify-center mb-16 overflow-hidden dark:text-light">
         <Layout className="pt-16">
           <AnimatedText text="Imagination Trumps Knowledge!" className="mb-16 lg:text-7xl sm:mb-8 sm:!text-4xl" />

@@ -13,6 +13,7 @@ import article6 from "../../public/images/articles/todo list app built using rea
 import article7 from "../../public/images/articles/What is Redux with easy explanation.png";
 import article8 from "../../public/images/articles/What is higher order component in React.jpg";
 import { motion, useMotionValue } from "framer-motion";
+import { TransitionEffect } from "@/components/transition-effect";
 
 const FramerImage = motion(Image);
 
@@ -65,7 +66,8 @@ const Article = ({img, title, date, link}) => {
     sm:flex-col
     ">
       <MovingImg title={title} link={link} img={img} />
-      <span className="text-primary font-semibold pl-4 dark:text-primaryDark sm:self-start sm:pl-0 xs:text-sm">{date}</span>
+      <span
+        className="text-primary font-semibold pl-4 dark:text-primaryDark sm:self-start sm:pl-0 xs:text-sm">{date}</span>
     </motion.li>
   );
 
@@ -107,6 +109,7 @@ const Articles = () => {
         <title>Portfolio | Articles Page</title>
         <meta name="description" content="any description" />
       </Head>
+      <TransitionEffect />
       <main className="w-full flex flex-col items-center justify-center mb-16 overflow-hidden dark:text-light">
         <Layout className="pt-16">
           <AnimatedText text="Words Can Change The World!" className="mb-16 lg:text-7xl sm:mb-8 sm:!text-4xl" />
