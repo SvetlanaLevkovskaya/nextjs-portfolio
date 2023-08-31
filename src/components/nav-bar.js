@@ -88,7 +88,7 @@ export const NavBar = () => {
         </nav>
 
         <nav className="flex items-center justify-center flex-wrap">
-          <motion.a href="https://github.com" target={"_blank"}
+          <motion.a href="https://github.com/SvetlanaLevkovskaya" target={"_blank"}
                     whileHover={{y: -2}}
                     whileTap={{scale: 0.9}}
                     className="w-6 mr-3"
@@ -103,7 +103,7 @@ export const NavBar = () => {
           >
             <TwitterIcon />
           </motion.a>
-          <motion.a href="https://linkedin.com" target={"_blank"}
+          <motion.a href="https://linkedin.com/in/svetlanalevkovskaya" target={"_blank"}
                     whileHover={{y: -2}}
                     whileTap={{scale: 0.9}}
                     className="w-6 mx-3"
@@ -158,7 +158,7 @@ export const NavBar = () => {
             </nav>
 
             <nav className="flex items-center justify-center flex-wrap mt-2">
-              <motion.a href="https://github.com" target={"_blank"}
+              <motion.a href="https://github.com/SvetlanaLevkovskaya" target={"_blank"}
                         whileHover={{y: -2}}
                         whileTap={{scale: 0.9}}
                         className="w-6 mr-3 bg-light rounded-full dark:bg-dark sm:mx-1"
@@ -173,7 +173,7 @@ export const NavBar = () => {
               >
                 <TwitterIcon />
               </motion.a>
-              <motion.a href="https://linkedin.com" target={"_blank"}
+              <motion.a href="https://linkedin.com/in/svetlanalevkovskaya" target={"_blank"}
                         whileHover={{y: -2}}
                         whileTap={{scale: 0.9}}
                         className="w-6 mx-3 sm:mx-1"
