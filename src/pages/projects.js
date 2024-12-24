@@ -5,11 +5,12 @@ import { AnimatedText } from "@/components/animated-text";
 import Link from "next/link";
 import Image from "next/image";
 import { GithubIcon } from "@/components/icons";
-import randomButton from "../../public/images/projects/random-button.png";
-import authPosts from "../../public/images/projects/auth-posts.png";
+import authPosts from "../../public/images/projects/authPosts.png";
 import educationalApp from "../../public/images/projects/educational-app.png";
-import ecommerce from "../../public/images/projects/e-commerce.png";
+import ecommerce from "../../public/images/projects/ecommerce.png";
 import lofthouse from "../../public/images/projects/lofthouse.png";
+import messages from "../../public/images/projects/gps-messages.png";
+import chat from "../../public/images/projects/chat.png";
 
 import { motion } from "framer-motion";
 import { TransitionEffect } from "@/components/transition-effect";
@@ -105,34 +106,35 @@ const Projects = () => {
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-x-4 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
-                title="Random Icon Button"
-                img={randomButton}
-                summary="The Random Icon Button app is a simple Angular application that allows users to display a random icon.
-              By clicking the 'Show Random Icon' button, a random icon will be generated from a predefined set of icons."
-                link="https://svetlanalevkovskaya.github.io/angular-docusketch/"
-                github="https://github.com/SvetlanaLevkovskaya/angular-docusketch"
-                type="Featured Project"
-              />
-
-
-            </div>
-
-            <div className="col-span-6 sm:col-span-12">
-              <Project
-                title="Random Icon Button"
-                img={randomButton}
-                link="https://svetlanalevkovskaya.github.io/angular-docusketch/"
-                github="https://github.com/SvetlanaLevkovskaya/angular-docusketch"
-                type="Featured Project"
-              />
-            </div>
-
-            <div className="col-span-6 sm:col-span-12">
-              <Project
-                title="Auth Posts App"
+                title="Auth Article App"
                 img={authPosts}
-                link="https://svetlanalevkovskaya.github.io/auth-posts-app/posts"
-                github="https://github.com/SvetlanaLevkovskaya/auth-posts-app"
+                summary="A web application for viewing, creating, and editing articles with nested comments functionality.
+                Users can register, log in, and reset passwords using JWT tokens. Each article includes an image,
+                text, and the ability to comment, edit comments, and reply to them."
+                link="https://auth-posts-nextjs.vercel.app/"
+                github="https://github.com/SvetlanaLevkovskaya/auth-posts-nextjs"
+                type="Featured Project"
+              />
+
+
+            </div>
+
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                title="MessageView"
+                img={messages}
+                link="https://gts-messages.vercel.app"
+                github="https://github.com/SvetlanaLevkovskaya/gts-messages"
+                type="Featured Project"
+              />
+            </div>
+
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                title="E-commerce App"
+                img={ecommerce}
+                link="https://next-ecom-nu.vercel.app/"
+                github="https://github.com/SvetlanaLevkovskaya/next-ecom"
                 type="Featured Project"
               />
             </div>
@@ -153,10 +155,10 @@ const Projects = () => {
 
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="E-commerce App"
-                img={ecommerce}
-                link="https://svetlanalevkovskaya.github.io/e-commerce/"
-                github="https://github.com/SvetlanaLevkovskaya/e-commerce"
+                title="Chat App"
+                img={chat}
+                link="https://nextjs-chat-pi-ten-61.vercel.app/"
+                github="https://github.com/SvetlanaLevkovskaya/nextjs-chat"
                 type="Featured Project"
               />
             </div>
